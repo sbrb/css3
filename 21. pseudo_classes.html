@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>pseudo_classes</title>
+    <style>
+        selector:pseudo-class {
+            color: red;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+        li:first-child {
+            color: #fb00ff;
+        }
+
+        li:last-child {
+            color: #fb00ff;
+        }
+
+        /* li:nth-child(even) {
+            color: #00ff59;
+        } */
+
+        li:nth-child(3n+2) {
+            color: #00ff59;
+        }
+
+        input:focus{
+            border: 9px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        <a href="" class="pseudo">11111</a><br>
+
+        <ul>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+            <li>list</li>
+        </ul>
+
+        <input type="text">
+    </h2>
+</body>
+
+</html>

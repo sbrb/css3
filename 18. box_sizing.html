@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>box_sizing</title>
+    <style>
+        .d1 {
+            background-color: blue;
+            width: 666px;
+            height: 222px;
+        }
+
+        .d2 {
+            background-color: #00ff8c;
+            width: 666px;
+            height: 222px;
+            padding: 33px;
+            border: 22px solid red;
+            /* box-sizing: content-box; */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d1"></div>
+    <div class="d2"></div>
+</body>
+
+</html>

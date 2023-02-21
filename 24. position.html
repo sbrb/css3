@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>position</title>
+    <!-- static, relative, absolute, fixed -->
+    <!-- top, bottom, left, right -->
+    <!-- relative: it's keep place booked. -->
+    <!-- absolute: it's start calculating from poisoned parent.
+        If we don't use position popery it will start calculating from body.
+        If we don't use "top, bottom, left, right" it will left its place. -->
+    <style>
+        /* absolute */
+        .absolute {
+            border: 3px solid black;
+            padding: 22px;
+            width: 50%;
+            margin: 33px;
+            margin-top: 66px;
+            color: white;
+            font-size: 22px;
+            position: relative;
+        }
+
+        .a1 {
+            background-color: red;
+            width: 88px;
+            height: 77px;
+            display: inline-block;
+        }
+
+        .a2 {
+            background-color: green;
+            width: 88px;
+            height: 77px;
+            display: inline-block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .a3 {
+            background-color: blue;
+            width: 88px;
+            height: 77px;
+            display: inline-block;
+        }
+
+        /* relative */
+        .relative {
+            border: 3px solid black;
+            padding: 22px;
+            width: 50%;
+            margin: 33px;
+            color: white;
+            font-size: 22px;
+        }
+
+        .r1 {
+            background-color: red;
+            width: 88px;
+            height: 77px;
+            display: inline-block;
+        }
+
+        .r2 {
+            background-color: green;
+            width: 88px;
+            height: 77px;
+            display: inline-block;
+            position: relative;
+            top: 55px;
+            left: 55px;
+        }
+
+        .r3 {
+            background-color: blue;
+            width: 88px;
+            height: 77px;
+            display: inline-block;
+        }
+         /* fixed */
+        .fixed {
+            border: 3px solid black;
+            padding: 22px;
+            width: 50%;
+            margin: 33px;
+            color: white;
+            font-size: 22px;
+            position: relative;
+        }
+        .f1 {
+            background-color: red;
+            width: 88px;
+            height: 77px;
+            display: inline-block;
+
+        }
+
+        .f2 {
+            background-color: green;
+            width: 88px;
+            height: 77px;
+            display: inline-block;
+            position: relative;
+            top: 55px;
+            left: 55px;
+        }
+
+        .f3 {
+            background-color: blue;
+            width: 88px;
+            height: 77px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- absolute -->
+    <div class="absolute">
+        <div class="a1">absolute</div>
+        <div class="a2">absolute</div>
+        <div class="a3">absolute</div>
+    </div>
+    <br>
+    <!-- relative -->
+    <div class="relative">
+        <div class="r1">relative</div>
+        <div class="r2">relative</div>
+        <div class="r3">relative</div>
+    </div>
+    <br>
+    <!-- fixed -->
+    <div class="fixed">
+        <div class="f1">fixed</div>
+        <div class="f2">fixed</div>
+        <div class="f3">fixed</div>
+    </div>
+</body>
+
+</html>

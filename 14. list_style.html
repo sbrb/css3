@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>list_style</title>
+    <style>
+        ul {
+            /* list-style-type: disc; */
+            /* list-style-type: square; */
+            /* list-style-type: circle; */
+
+            list-style-image: url('./images/arrow.png');
+            /* list-style-position: outside; */
+            /* list-style-position: inside; */
+        }
+        ol {
+            /* list-style-type: lower-alpha; */
+            /* list-style-type: lower-roman; */
+            /* list-style-type: upper-roman; */
+            list-style-type: decimal-leading-zero;
+        }
+        li{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>unordered list</h2>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <hr>
+    <h2>ordered list</h2>
+    <ol>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li>e</li>
+    </ol>
+</body>
+
+</html>
