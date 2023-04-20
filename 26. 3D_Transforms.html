@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>3D Transforms</title>
+    <style>
+        .cover{
+            border: 2px solid red;
+            height: 222px;
+            width: 222px;
+            margin: 150px;
+        }
+        .content{
+            height: 222px;
+            width: 222px;
+            background-color: yellow;
+
+            /* transform: perspective(333px) rotate3d(x,y,z,angle); */
+            /* transform: perspective(333px) rotate3d(0,50,50,55deg); */
+
+            /* transform: perspective(333px) translate3d(x,y,z); */
+            transform: perspective(333px) translate3d(0px,0px,-100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cover">
+        <div class="content">
+
+        </div>
+    </div>
+</body>
+
+</html>

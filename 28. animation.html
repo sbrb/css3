@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>transition</title>
+    <style>
+        @keyframes change_color {
+            /* from{background-color: #00ff11;}
+            to{background-color: blue;} */
+
+            0% {
+                background-color: #00ff11;
+                border-radius: 0%;
+            }
+
+            25% {
+                background-color: blue;
+                border-radius: 25%;
+            }
+
+            50% {
+                background-color: #8800ff;
+                border-radius: 50%;
+            }
+
+            75% {
+                background-color: #00bfff;
+                width:500px;
+                border-radius: 25%;
+            }
+
+            100% {
+                background-color: #fffb00;
+                border-radius: 0%;
+            }
+        }
+
+        .animate {
+            height: 222px;
+            width: 222px;
+            background-color: red;
+            margin: 111px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: change_color;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            /* animation-iteration-count: 3; */
+            animation-iteration-count: infinite;
+        }
+
+        .animate2 {
+            height: 222px;
+            width: 222px;
+            background-color: red;
+            margin: 111px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: change_color;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate; */
+            animation-direction: alternate-reverse;
+            /* animation-timing-function: ease-in; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animate"></div>
+    <div class="animate2"></div>
+</body>
+
+</html>

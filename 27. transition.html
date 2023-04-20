@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>transition</title>
+    <style>
+        .d1 {
+            height: 222px;
+            width: 222px;
+            background-color: red;
+            margin: 111px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transition-property: width, background-color; */
+            transition-property: all;
+            transition-duration: 1s;
+            /* transition-delay: 500ms; */
+            /* transition-timing-function: ease; */
+            /* transition-timing-function: ease-in; */
+            /* transition-timing-function: ease-in-out; */
+
+            /* transition: property,duration,timing-function,delay; */
+            transition: width 2s, height 5s,;
+        }
+
+        .d1:hover {
+            height: 322px;
+            width: 422px;
+            background-color: #00ff11;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="d1">
+        Hover Me
+    </h1>
+</body>
+
+</html>
